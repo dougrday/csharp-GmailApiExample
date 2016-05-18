@@ -62,11 +62,11 @@ Hello <strong>World!</strong>
             UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                 new ClientSecrets
                 {
-                    ClientId = "662050509339-r6t647l2vana5p0uh3b1ahf35jogqtum.apps.googleusercontent.com",
-                    ClientSecret = "2jLNPUHhAySVpg7QG8qCXvj2"
+                    ClientId = "client-id-here",
+                    ClientSecret = "client-secret-here"
                 },                
                 scopes,
-                "dougrday@gmail.com",
+                "your-email@gmail.com",
                 CancellationToken.None).Result;
 
             Console.WriteLine("Authorization granted or not required (if the saved access token already available)");
